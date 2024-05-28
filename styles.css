@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#content{
+    background-color: #F1DAAD;
+    min-height: max-content;
+    max-height: max-content;    
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: space-between;
+
+}
+
+header{
+    position: sticky;
+    top: 0;
+    background-color: #814827;
+    height: 110px;
+    min-width: 100%;
+    display: flex;
+        #nav{
+            display: none;
+        }
+        
+        #hamb{
+            width: 40px;
+            height: 28px;
+            order: 1;
+        }
+        #shop{
+            width: 52px;
+            height: 39px;
+            order: 3;
+        }
+        #logo {
+        width: 195px;
+        height: 80px; 
+        order: 2;
+        }
+        justify-content: space-around;
+        align-items: center;
+}   
+
+
+main{
+    min-height: 100vh;
+
+}
+
+footer{
+    display: flex;
+    height: 190px;
+    background-color: #814827;
+    min-width: 375px;
+        #adress-desktop{
+            display: none;
+        }
+        #socials-desktop{
+            display: none;
+        }
+        #logo-bio{
+           width: 101px;
+           height: 91px;
+           order: 1; 
+        }
+        #logo-fair{
+          width: 90px;
+          height: 127.5px;
+          order: 3;  
+        }
+        #contact{
+            order: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            p{
+                text-align: center;
+            }
+        }
+    justify-content: space-around;
+    align-items: center;
+        ul{
+            list-style: none;
+            text-align: center;
+        }
+    
+}
+
+
+
+
+
+@media screen and (min-width: 1000px){
+    header{
+        justify-content: space-between;
+        #logo{
+            margin-left: 130px;
+        }
+        .icon{
+            display: none;
+        }
+        #nav{   
+            display: block;
+            order: 4;
+            .li1{
+                margin-right: 50px;
+                a:link {
+                    text-decoration: none;
+                }
+                a:hover{
+                    color: #868280;
+                }
+            }
+            .li2{
+                margin-right: 180px;
+                a:link {
+                    text-decoration: none;
+                }
+                a:hover{
+                    color: #868280;
+                }
+            }
+
+                ul{
+                    list-style: none;
+                    display: flex;
+                    font-size: 24px;
+                }
+        }
+        a{color: white;}
+
+    }
+
+    footer{
+        #contact{
+            display: none;
+        }
+        #adress-desktop{
+            display: block;
+            grid-column: 11/13;
+
+        }
+        #socials-desktop{
+            p{margin-left: 13px;}
+            display: flex;
+            grid-column: 7/9;
+            grid-row: 1;
+            justify-content: center;
+        }
+        display: grid;
+        grid-template-columns: repeat(14, 1fr);
+        #logo-bio{
+            grid-column: 2/3;
+            grid-row: 1;
+            justify-self: center;
+        }
+        #logo-fair{
+            grid-column: 3/5;
+            grid-row: 1;
+            justify-self: center;
+        }
+
+    }
+
+    .li3{margin-top: 20px;}
+
+}
