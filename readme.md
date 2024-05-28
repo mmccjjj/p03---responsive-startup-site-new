@@ -17,3 +17,8 @@ Ziel des Gruppenprojektes war es eine Homepage über ein fiktives StartUp zu mac
     Philipp hat die Startseiten mit den Produkten erstellt
 
     Harry hat die About seite erstellt.
+
+## Figma
+---
+
+https://www.figma.com/design/YiRrDgDQvQ6kupuiISckxO/BestBeans?node-id=0-1&t=Y0HKbTJc4lXjsvqv-0
