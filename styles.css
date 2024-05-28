@@ -3,6 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
 #content{
     background-color: #F1DAAD;
     min-height: max-content;
