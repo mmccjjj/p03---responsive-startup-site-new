@@ -52,42 +52,46 @@ main{
 }
 
 footer{
-    display: flex;
+    display: grid;
     height: 190px;
     background-color: #814827;
     min-width: 375px;
-        #adress-desktop{
-            display: none;
-        }
-        #socials-desktop{
-            display: none;
-        }
-        #logo-bio{
-           width: 101px;
-           height: 91px;
-           order: 1; 
-        }
-        #logo-fair{
-          width: 90px;
-          height: 127.5px;
-          order: 3;  
-        }
-        #contact{
-            order: 2;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            p{
-                text-align: center;
-            }
-        }
+    padding-top: 20px;
     justify-content: space-around;
     align-items: center;
-        ul{
-            list-style: none;
-            text-align: center;
-        }
+    grid-template-areas: 
+    "logoBio socials logoFair"
+    "logoBio . logoFair"
+    "logoBio contact logoFair"
+    "logoBio contact logoFair";
     
+
+        #contactTitle{
+            display: none;
+        }
+
+        #logo-bio{
+            grid-area: logoBio;
+            width: 101px;
+            height: 101px;
+            order: 1; 
+        }
+        #logo-fair{
+            grid-area: logoFair;
+            width: 90px;
+            height: 127.5px; 
+        }
+        #contact{
+            grid-area: contact;
+            text-align: center;
+            margin-bottom: 10%;
+        }
+        #socials{
+            grid-area: socials;
+                p{
+                    text-align: center;
+                }
+        }
 }
 
 
@@ -137,36 +141,18 @@ footer{
     }
 
     footer{
-        #contact{
-            display: none;
-        }
-        #adress-desktop{
-            display: block;
-            grid-column: 11/13;
 
+        grid-template-areas: 
+        "logoBio logoFair .  socials . . contactTitle ."
+        "logoBio logoFair .  socials . . contact ."
+        "logoBio logoFair .  socials . . contact .";
+        #contactTitle{
+            grid-area: contactTitle;
+            display: block;
+            text-align: center;
+            margin-top: 45%;
         }
-        #socials-desktop{
-            p{margin-left: 13px;}
-            display: flex;
-            grid-column: 7/9;
-            grid-row: 1;
-            justify-content: center;
-        }
-        display: grid;
-        grid-template-columns: repeat(14, 1fr);
-        #logo-bio{
-            grid-column: 2/3;
-            grid-row: 1;
-            justify-self: center;
-        }
-        #logo-fair{
-            grid-column: 3/5;
-            grid-row: 1;
-            justify-self: center;
-        }
+
 
     }
-
-    .li3{margin-top: 20px;}
-
 }

@@ -6,6 +6,7 @@
     <title>Contact</title>
     <link rel="stylesheet" href="/styles.css">
     <link rel="stylesheet" href="/styles-dani.css">
+    <link rel="icon" href="/img/icons/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <div id="content">
@@ -25,7 +26,7 @@
         </header>
 
         <main>
-            <div class="contact-form">
+            <form class="contact-form">
                 <h1>Wir freuen uns von Ihnen zu hören</h1>
                 <div id="contact-form1">
                
@@ -35,34 +36,37 @@
                         <option>Enby</option>
                     </select><br>
                 
-                    <label>Name, Nachname:</label><br>
-                    <input type="text" name="Name, Nachname" size="30" maxlength="30"><br>
+                    <label for="nameNachname">Name, Nachname:</label><br>
+                    <input type="text" name="nameNachname" id="nameNachname" size="30" maxlength="30"><br>
 
-                    <label>Firma:</label><br>
-                    <input type="text" name="Firma" size="30" maxlength="30"><br>
+                    <label for="firma">Firma:</label><br>
+                    <input type="text" name="firma" id="firma" size="30" maxlength="30"><br>
 
-                    <label>Strasse + Hausnummer:</label><br>
-                    <input type="text" name="Strasse + Hausnummer" size="30" maxlength="30"><br>
+                    <label for="strasseHausnummer">Strasse + Hausnummer:</label><br>
+                    <input type="text" name="strasseHausnummer" id="strasseHausnummer" size="30" maxlength="30"><br>
 
-                    <label>PLZ, Ort:</label><br>
-                    <input type="text" name="PLZ, Ort" size="30" maxlength="30"><br>
+                    <label for="plz">PLZ:</label><br>
+                    <input type="number" name="plz" id="plz" size="30" maxlength="30"><br>
 
-                    <label>E-Mail:</label><br>
-                    <input type="text" name="E-Mail" size="30" maxlength="30"><br>
+                    <label for="Ort">Ort:</label><br>
+                    <input type="text" name="Ort" id="Ort" size="30" maxlength="30"><br>
 
-                    <label>Tel:</label><br>
-                    <input type="text" name="Tel" size="30" maxlength="30"><br>
+                    <label for="email">E-Mail:</label><br>
+                    <input type="email" name="email" id="email" size="30" maxlength="30"><br>
 
-                    <label>Betreff:</label><br>
-                    <input type="text" name="Betreff" size="30" maxlength="30"><br>
+                    <label for="tel">Tel:</label><br>
+                    <input type="text" name="tel" id="tel" size="30" maxlength="30"><br>
+
+                    <label for="betreff">Betreff:</label><br>
+                    <input type="text" name="betreff" id="betreff" size="30" maxlength="30"><br>
                 </div>
                 <div id="contact-form2">
-                    <label>Nachricht:</label><br>
-                    <textarea name="message" id="" cols="39" rows="10" maxlength="300"></textarea><br>
+                    <label for="message">Nachricht:</label><br>
+                    <textarea name="message" id="message" cols="39" rows="10" maxlength="300"></textarea><br>
 
-                    <button type="button">Senden</button>
+                    <button type="submit">Senden</button>
                 </div>
-            </div>
+            </form>
 
 
 
@@ -72,37 +76,21 @@
         <footer>
             <img id="logo-bio" src="/img/logo/Bio-Insecta.png" alt="">
             <img id="logo-fair" src="/img/logo/fair.png" alt="">
-            <ul id="adress-desktop">
-                <li>Kontakt</li>
-                <li class="li3">Best Beans</li>
-                <li>Räffelstrasse 12</li>
-                <li>8003 Zürich</li>
-                <li>best@beans.ch</li>
-            </ul>
-            <div id="socials-desktop">
-                <div id="socials-icons-desktop">
+            <p id="contactTitle">Kontakt</p>
+            <address id="contact">
+                Best Beans <br>
+                Räffelstrasse 12 <br>
+                8003 Zürich <br>
+                <a href="mailto:best@beans.ch" target="_blank">best@beans.ch</a>
+            </address>
+            <div id="socials">
+                <div id="socials-icons">
                 <p>Social Meida</p>
-                <img src="/img/icons/Linkedin.png" alt="">
-                <img src="/img/icons/Twitter.png" alt="">
+                <a href="https://ch.linkedin.com/" target="_blank"><img src="/img/icons/Linkedin.png" alt=""></a>
+                <a href="https://x.com/" target="_blank"><img src="/img/icons/Twitter.png" alt=""></a>
                 </div>
             </div>
 
-            <div id="contact">
-
-                    <p>Social Meida</p>
-
-                    <div id="socials-icons">
-                        <img src="/img/icons/Linkedin.png" alt="">
-                        <img src="/img/icons/Twitter.png" alt="">
-                    </div>
-
-                        <ul>
-                            <li>Best Beans</li>
-                            <li>Räffelstrasse 12</li>
-                            <li>8003 Zürich</li>
-                            <li>best@beans.ch</li>
-                        </ul>
-            </div>
 
 
 
